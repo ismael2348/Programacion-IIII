@@ -1,0 +1,59 @@
+$Teclado=500;
+$Ventilador=500;
+$Raton=500;
+$Cargador=500;
+$Monitor=500;
+$valorIVA=.16;
+$SubTotal=$Teclado+$Ventilador+$Raton+$Cargador+$Monitor;
+$IVA=$SubTotal*$valorIVA;
+$Total=$Teclado+$Ventilador+$Raton+$Cargador+$Monitor+$IVA;
+?>
+
+
+
+
+<html>
+<body>
+
+
+<table Border="1">
+<tr>
+<td>Producto  </td>
+<td> Precio </td>
+</tr>
+<tr>
+<td>Teclado  </td>
+<td> <?php echo $Teclado;?> </td>
+</tr>
+<tr>
+<td>Ventilador  </td>
+<td> <?php echo $Ventilador;?> </td>
+</tr>
+<tr>
+<td>Raton  </td>
+<td> <?php echo $Raton;?> </td>
+</tr>
+<tr>
+<td>Cargador  </td>
+<td> <?php echo $Cargador;?> </td>
+</tr>
+<tr>
+<td>Monitor  </td>
+<td> <?php echo $Monitor;?> </td>
+</tr>
+<tr>
+<td>SubTotal  </td>
+<td> <?php echo $SubTotal;?> </td>
+</tr>
+<tr>
+<td>IVA  </td>
+<td> <?php echo $IVA;?> </td>
+</tr>
+<tr>
+<td>TOTAL  </td>
+<td> <?php echo $Total;?> </td>
+</tr>
+</table>
+</body>
+</html>
+<?php
